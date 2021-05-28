@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+	"math/cmplx"
+)
 
 // outside the fuctions, we must use keyword var
 // cannot use :=
@@ -44,11 +48,38 @@ func variablesShorter () {
 	fmt.Println(a, b, c, d)
 }
 
+func euler () {
+	// c := 3 + 4i
+	// fmt.Println(cmplx.Abs(c))
+	// fmt.Println(cmplx.Exp(1i * math.Pi) + 1) -> (0+1.2246467991473515e-16i)
+	fmt.Printf("%.3f\n", cmplx.Exp(1i * math.Pi) + 1) // (0.000+0.000i)
+
+}
+
+func triangle () {
+	var a, b int = 3, 4
+	var c int = int(math.Sqrt(float64(a * a + b * b)))
+	fmt.Println(c)
+}
+
 func main () {
+	// basic
 	fmt.Println("Hello world")
 	variablesZeroValue()
 	variablesInitialValue()
 	typeDeduction()
 	variablesShorter()
 	fmt.Println(aa, bb, ss)
+	
+	// inner variable type
+	// 1. bool, string
+	// 2. (u)int, (u)int8, (u)int16, (u)int32, (u)int64, uintptr
+		// uint: integer without sign, int: integer with sign
+	// 3. byte, rune (4 bytes)
+	// 4. float32, float64, complex64(实部虚部都是float32), complex128(实部虚部各64)
+	euler()
+	triangle()
 }
+
+
+
