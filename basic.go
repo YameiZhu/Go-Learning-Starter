@@ -62,6 +62,39 @@ func triangle () {
 	fmt.Println(c)
 }
 
+func consts () {
+	const (
+		filename = "abc.text"
+		// const can be used as all types if we don't specify type
+		a, b = 3, 4
+	)
+	var c int
+	c = int(math.Sqrt(a*a + b*b))
+	fmt.Println(filename, c)
+}
+
+func enums () {
+	// normal enum
+	const (
+		cpp = iota
+		_
+		python 
+		golang 
+	)
+	fmt.Println(cpp, python, golang)
+	// self-inc enum
+	const(
+		b = 1 << (10 * iota)
+		kb
+		mb
+		gb
+		tb
+		pb
+	)
+	// 1 1024 1048576 1073741824 1099511627776 1125899906842624
+	fmt.Println(b, kb, mb, gb, tb, pb)
+}
+
 func main () {
 	// basic
 	fmt.Println("Hello world")
@@ -79,6 +112,10 @@ func main () {
 	// 4. float32, float64, complex64(实部虚部都是float32), complex128(实部虚部各64)
 	euler()
 	triangle()
+
+	// const and enum
+	consts()
+	enums()
 }
 
 
