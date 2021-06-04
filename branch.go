@@ -21,28 +21,28 @@ func grade (score int) string {
 	return g
 } 
 
-func main () {
-	const filename = "abc.txt"
-	// contents, err := ioutil.ReadFile(filename)
-	// if err != nil {
-	// 	fmt.Println(err)	
-	// } else {
-	// 	fmt.Printf("%s\n", contents)
-	// }
+// func main () {
+// 	const filename = "abc.txt"
+// 	// contents, err := ioutil.ReadFile(filename)
+// 	// if err != nil {
+// 	// 	fmt.Println(err)	
+// 	// } else {
+// 	// 	fmt.Printf("%s\n", contents)
+// 	// }
 
-	// if 条件里可以赋值
-	// if 条件里赋值的变量作用域只在if里
-	if contents, err := ioutil.ReadFile(filename); err != nil {
-		fmt.Println(err)	
-	} else {
-		fmt.Printf("%s\n", contents)
-	}
+// 	// if 条件里可以赋值
+// 	// if 条件里赋值的变量作用域只在if里
+// 	if contents, err := ioutil.ReadFile(filename); err != nil {
+// 		fmt.Println(err)	
+// 	} else {
+// 		fmt.Printf("%s\n", contents)
+// 	}
 
-	fmt.Println(grade(0), 
-				grade(59), 
-				grade(61), 
-				grade(79), 
-				grade(89), 
-				grade(99), 
-				grade(101))
-}
+// 	fmt.Println(grade(0), 
+// 				grade(59), 
+// 				grade(61), 
+// 				grade(79), 
+// 				grade(89), 
+// 				grade(99), 
+// 				grade(101))
+// }
