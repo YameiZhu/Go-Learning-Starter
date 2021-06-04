@@ -95,28 +95,28 @@ func enums () {
 	fmt.Println(b, kb, mb, gb, tb, pb)
 }
 
-func main () {
-	// basic
-	fmt.Println("Hello world")
-	variablesZeroValue()
-	variablesInitialValue()
-	typeDeduction()
-	variablesShorter()
-	fmt.Println(aa, bb, ss)
+// func main () {
+// 	// basic
+// 	fmt.Println("Hello world")
+// 	variablesZeroValue()
+// 	variablesInitialValue()
+// 	typeDeduction()
+// 	variablesShorter()
+// 	fmt.Println(aa, bb, ss)
 	
-	// inner variable type
-	// 1. bool, string
-	// 2. (u)int, (u)int8, (u)int16, (u)int32, (u)int64, uintptr
-		// uint: integer without sign, int: integer with sign
-	// 3. byte, rune (4 bytes)
-	// 4. float32, float64, complex64(实部虚部都是float32), complex128(实部虚部各64)
-	euler()
-	triangle()
+// 	// inner variable type
+// 	// 1. bool, string
+// 	// 2. (u)int, (u)int8, (u)int16, (u)int32, (u)int64, uintptr
+// 		// uint: integer without sign, int: integer with sign
+// 	// 3. byte, rune (4 bytes)
+// 	// 4. float32, float64, complex64(实部虚部都是float32), complex128(实部虚部各64)
+// 	euler()
+// 	triangle()
 
-	// const and enum
-	consts()
-	enums()
-}
+// 	// const and enum
+// 	consts()
+// 	enums()
+// }
 
 
 
