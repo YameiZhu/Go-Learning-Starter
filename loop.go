@@ -37,13 +37,13 @@ func forever () {
 	}
 }
 
-func main() {
-	fmt.Println(
-		convertToBin(5), // 110
-		convertToBin(13), // 1101
-		convertToBin(745463),
-		convertToBin(0),
-	)
+// func main() {
+// 	fmt.Println(
+// 		convertToBin(5), // 110
+// 		convertToBin(13), // 1101
+// 		convertToBin(745463),
+// 		convertToBin(0),
+// 	)
 
-	printFile("abc.txt")
+// 	printFile("abc.txt")
 }

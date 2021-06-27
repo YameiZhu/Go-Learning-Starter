@@ -45,6 +45,7 @@ func sum(numbers ...int) int {
 	return s
 }
 
+// pass the value vs pass the reference
 func swap(a, b int) (int, int) {
 	return b, a
 }
