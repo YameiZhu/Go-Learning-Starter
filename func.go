@@ -50,27 +50,27 @@ func swap(a, b int) (int, int) {
 	return b, a
 }
 
-func main() {
-	fmt.Println("Error handling")
-	if result, err := eval(3, 4, "x"); err != nil {
-		fmt.Println("Error:", err)
-	} else {
-		fmt.Println(result)
-	}
-	q, r := div(13, 3)
-	fmt.Printf("13 div 3 is %d mod %d\n", q, r)
+// func main() {
+// 	fmt.Println("Error handling")
+// 	if result, err := eval(3, 4, "x"); err != nil {
+// 		fmt.Println("Error:", err)
+// 	} else {
+// 		fmt.Println(result)
+// 	}
+// 	q, r := div(13, 3)
+// 	fmt.Printf("13 div 3 is %d mod %d\n", q, r)
 
-	// functional programming
-	fmt.Println("pow(3, 4) is:", apply(
-		// anonymous function
-		func(a int, b int) int {
-			return int(math.Pow(
-				float64(a), float64(b)))
-		}, 3, 4))
+// 	// functional programming
+// 	fmt.Println("pow(3, 4) is:", apply(
+// 		// anonymous function
+// 		func(a int, b int) int {
+// 			return int(math.Pow(
+// 				float64(a), float64(b)))
+// 		}, 3, 4))
 
-	fmt.Println("1+2+...+5 =", sum(1, 2, 3, 4, 5))
+// 	fmt.Println("1+2+...+5 =", sum(1, 2, 3, 4, 5))
 
-	a, b := 3, 4
-	a, b = swap(a, b)
-	fmt.Println("a, b after swap is:", a, b)
-}
+// 	a, b := 3, 4
+// 	a, b = swap(a, b)
+// 	fmt.Println("a, b after swap is:", a, b)
+// }
